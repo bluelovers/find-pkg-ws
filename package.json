@@ -1,7 +1,15 @@
 {
   "name": "find-pkg-ws",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "find yarn workspaces package.json",
+  "keywords": [
+    "init",
+    "npm",
+    "workspace",
+    "workspaces",
+    "lerna",
+    "yarn"
+  ],
   "homepage": "https://github.com/bluelovers/find-pkg-ws#readme",
   "bugs": {
     "url": "https://github.com/bluelovers/find-pkg-ws/issues"
