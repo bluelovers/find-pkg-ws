@@ -2,7 +2,7 @@
 /**
  * Created by user on 2018/5/14/014.
  */
-const findYarnWorkspaceRoot = require("find-yarn-workspace-root");
+const findYarnWorkspaceRoot = require("find-yarn-workspace-root2");
 const path = require("path");
 function findWorkspacePackageJson(cwd) {
     let ws = findYarnWorkspaceRoot(cwd || process.cwd());
