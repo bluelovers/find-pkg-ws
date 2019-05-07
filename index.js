@@ -1,4 +1,7 @@
 "use strict";
+/**
+ * Created by user on 2018/5/14/014.
+ */
 const findYarnWorkspaceRoot = require("find-yarn-workspace-root");
 const path = require("path");
 function findWorkspacePackageJson(cwd) {
@@ -8,8 +11,7 @@ function findWorkspacePackageJson(cwd) {
     }
     return null;
 }
-module.exports = Object.assign(findWorkspacePackageJson, {
-    findWorkspacePackageJson,
-    findPkg: findWorkspacePackageJson,
-    default: findWorkspacePackageJson,
-});
+findWorkspacePackageJson.findPkg = findWorkspacePackageJson;
+findWorkspacePackageJson.default = findWorkspacePackageJson;
+module.exports = findWorkspacePackageJson;
+//# sourceMappingURL=index.js.map

@@ -2,8 +2,8 @@
  * Created by user on 2018/5/14/014.
  */
 
-import * as findYarnWorkspaceRoot from 'find-yarn-workspace-root';
-import * as path from 'path';
+import findYarnWorkspaceRoot = require('find-yarn-workspace-root');
+import path = require('path');
 
 function findWorkspacePackageJson(cwd?: string)
 {
@@ -17,8 +17,7 @@ function findWorkspacePackageJson(cwd?: string)
 	return null;
 }
 
-export = Object.assign(findWorkspacePackageJson, {
-	findWorkspacePackageJson,
-	findPkg: findWorkspacePackageJson,
-	default: findWorkspacePackageJson,
-});
+findWorkspacePackageJson.findPkg = findWorkspacePackageJson;
+findWorkspacePackageJson.default = findWorkspacePackageJson;
+
+export = findWorkspacePackageJson
